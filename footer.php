@@ -83,10 +83,10 @@ if(ICL_LANGUAGE_CODE=='en'){
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
                   </div>
                   <div class="bullet-content">
-                    <h2>Arauco Coronel</h2>
-                    <p>Carlos Pratt  González 0901<br>
-                    Coronel<br>
-                    <a href="https://www.google.cl/maps/place/Mall+Arauco+Coronel/@-37.013895,-73.1603369,712m/data=!3m1!1e3!4m13!1m7!3m6!1s0x9669c11972020ecd:0xf2e87d4931e8916e!2sCarlos+Pratt+Gonz%C3%A1lez+901,+Coronel,+Regi%C3%B3n+del+B%C3%ADo+B%C3%ADo!3b1!8m2!3d-37.0145719!4d-73.1580195!3m4!1s0x0:0x9c764d06a239f15f!8m2!3d-37.0136476!4d-73.15997?hl=es" class="link_rojo" target="_blank"><?php echo $tit1; ?></a></p>
+                    <h2><?php bloginfo('name'); ?></h2>              
+                    <p>San Ignacio 532<br>
+                    Quilicura<br>
+                    <a href="https://www.google.com/maps/place/Arauco+Premium+Outlet+Buenaventura/@-33.331047,-70.704999,18z/data=!4m5!3m4!1s0x0:0xf59c2753c10765ea!8m2!3d-33.3311628!4d-70.7053675?hl=es-ES" class="link_rojo" target="_blank"><?php echo $tit1; ?></a></p>
                   </div>
                 </li>  
                 <li class="bullet clearfix">
