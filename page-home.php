@@ -80,11 +80,11 @@ if(ICL_LANGUAGE_CODE=='en'){
 								$e++; 
 						?>    	
                            <div class="item">
-                               <a href="<?php bloginfo('url'); ?>/food-court-tiendas/#tiendas">
+                               <a href="<?php bloginfo('url'); ?>/turistas">
 	                            <?php if($e==1){ ?>
                                    <div class="caption foodcourt">
-                                      <p>NUESTRA VARIEDAD </p>
-                                       <h3>Patio de Comidas </h3>
+                                      <p>SERVICIO A NUESTROS</p>
+                                       <h3>Turistas </h3>
                                        <div class="divider"> </div>
                                    </div>
                                 <?php } ?>
@@ -106,11 +106,11 @@ if(ICL_LANGUAGE_CODE=='en'){
 								$e++; 
 						?>    	
                               <div class="item">
-                                  <a href="<?php bloginfo('url'); ?>/bazar-central/#tiendas">                                   
+                                  <a href="<?php bloginfo('url'); ?>/food-court-tiendas/#tiendas">                                   
 	                            <?php if($e==1){ ?>
                                    <div class="caption galeria">
-                                      <p>VARIEDAD DE PRODUCTOS </p>
-                                       <h3>BAZAR CENTRAL </h3>
+                                      <p>NUESTRA VARIEDAD </p>
+                                       <h3>Food Court </h3>
                                        <div class="divider"> </div>
                                    </div>
                                 <?php } ?>
@@ -135,8 +135,8 @@ if(ICL_LANGUAGE_CODE=='en'){
                                   <a href="<?php bloginfo('url'); ?>/novedades/#entretencion">     
 	                            <?php if($e==1){ ?>
                                        <div class="caption entretencion">
-                                          <p>ZONA </p>
-                                           <h3>ENTRETENCIÓN </h3>
+                                          <p>¡TE LLEVAMOS! </p>
+                                           <h3>TRANSFER</h3>
                                            <div class="divider"> </div>
                                        </div>
                                 <?php } ?>
