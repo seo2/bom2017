@@ -1,8 +1,7 @@
-<?php
+ <?php
 /*
 
-Template name: Servicios al cliente
-
+Template name: Turistas
 */
 ?>
 <?php include('header.php') ?> 
@@ -29,10 +28,10 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$btn1 = "Veja todas as nossas lojas";
 	$btn2 = "Veja mais";
 }else{ 
-	$tit1 = "servicio al cliente";
+	$tit1 = "servicios turistas";
 	$tit2 = "contáctanos";
 	$tit3 = "Horarios";
-	$tit4 = "servicios";
+	$tit4 = "Descuentos";
 	$tit5 = "cómo llegar";
 	$btn1 = "ver todas las tiendas";
 	$btn2 = "ver más";
@@ -59,10 +58,10 @@ if(ICL_LANGUAGE_CODE=='en'){
 				    $detect = new Mobile_Detect();
 				    	 
 					if ($detect->isMobile()) { 
-					   include('include-sac-mobile.php'); 
+					   
 					   include('include-sac-como-llegar-mobile.php'); 
 					}else{ 	 
-						include('include-sac-desktop.php');
+						
 						include('include-sac-como-llegar-desktop.php');
 					}
 				?>
@@ -91,11 +90,38 @@ if(ICL_LANGUAGE_CODE=='en'){
                       <div class="row">
                           <div class="col-md-12 ">
                             <div class="desc_servicio">
-                               <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1666.7660305037016!2d-70.704999!3d-33.331047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf59c2753c10765ea!2sArauco+Premium+Outlet+Buenaventura!5e0!3m2!1ses!2sus!4v1503522918429" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-                               </div>
+                              <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1666.7660305037016!2d-70.704999!3d-33.331047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf59c2753c10765ea!2sArauco+Premium+Outlet+Buenaventura!5e0!3m2!1ses!2sus!4v1503522918429" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
                           </div>
+
                         </div>
-                        
+                                                                                 <div class="datos_como_llegar clearfix">
+
+    <div class="col-xs-12 text-center">
+          				<br>
+                        <p><strong>Transporte Público</strong><br>
+                        <i>Public transport</i></p>
+                        <p><strong>Para poder llegar a Arauco Premium Outlet Buenaventura, debes realizar el siguiente recorrido:</strong><br>
+                        <i>To get to Arauco Premium Outlet Buenaventura, follow these instructions</i></p>
+                        <p><strong>Tomar el Metro de Santiago hasta la estación Vespucio Norte (Línea Amarilla).</strong><br>
+                        <i>Take the metro to Vespucio Norte station (Yellow Line).</i></p>
+                        <p><strong>Bajarse en la estación y caminar hasta la calle Av. Américo Vespucio Norte / El Rosal.</strong><br>
+                        <i>Get off at the station and walk to Av. Vespucio Norte / El Rosal.</i></p>
+                        <p><strong>Tomar bus Transantiago B05 (Sentido hacia sector Buenaventura).</strong><br>
+                        <i>Take the Transantiago bus B05 (Direction: Buenaventura).</i></p>
+                        <p><strong>Bajarse en la parada PB1013 San Ignacio Esq. / Galvarino.</strong><br>
+                        <i>Get off at stop PB1013, San Ignacio Esq. / Galvarino</i></p>
+                        <p><strong>Caminar hacia Arauco Premium Outlet Buenaventura (San Ignacio 500).</strong><br>
+                        <i>Walk to Arauco Premium Outlet Buenaventura (San Ignacio 500).</i></p>
+                        <br>
+                        <p><strong>Recomendaciones</strong><br>
+                        <i>Recommendations</i></p>
+                        <p><strong>En Chile el transporte público funciona a través de la tarjeta BIP, la cual puedes obtener en todas las estaciones de Metro de Santiago.</strong><br>
+                        <i>In Chile, public transport works with the BIP card, which can be bought at any metro station.</i></p>
+          
+    </div>
+ 
+</div>
                     </div> <!-- container -->
                 </div> <!-- content como llegar -->
 				</section>
