@@ -57,8 +57,8 @@ if($tipo==1){
 	$message .= "</div>";
 	$message .= "</body></html>";
 	
-	$subject = 'Mensaje desde araucocoronel.cl';
-	$headers = "From: " . "<no-reply@araucocoronel.cl> Contacto Arauco Coronel" . "\r\n";
+	$subject = 'Mensaje desde arauco araucopremiumoutletbuenaventura.cl/';
+	$headers = "From: " . "<no-reply@araucopremiumoutletbuenaventura.cl/> Contacto Arauco Premium Outlet Buenaventura" . "\r\n";
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 	
