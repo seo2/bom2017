@@ -1920,7 +1920,7 @@ section.main_content .box .box_slider .item a .caption.galeria{background-color:
 @media (max-width: 991px){
 	section.top #menu_mobile .logo a,
 	section.top #nav_mobile .navbar-header .logo a {
-	    background: url(../img/logos_mall/arauco_coronel.svg) no-repeat;
+	   background: url(../img/logo_bom.png) no-repeat; background-size: contain; width: 140px; margin-top: 24px;
 	}
 }
 
