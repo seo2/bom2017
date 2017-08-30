@@ -1,7 +1,7 @@
 <?
 /*
 
-Template name: Descuentos turistas
+Template name: Transfer
 
 */
 ?>
@@ -18,10 +18,10 @@ $meses = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-10">
-                <h4 class="divider">Descuentos Turistas</h4>
+                <h4 class="divider">Servicio de Transfer</h4>
             </div>
             <div class="col-sm-12 col-md-2">
-              <a href="<?php bloginfo('url'); ?>/turistas" class="back">< <?php echo $back; ?></a>
+              <a href="<?php bloginfo('url'); ?>" class="back">< <?php echo $back; ?></a>
             </div>
           </div>
         </div>
