@@ -1909,7 +1909,7 @@ nav #navbar .container.menu_container .col-sm-12 .box_newsletter .form_neswslett
 
 /*----*/
 .logotravellersxs { position: absolute; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); top: 50%; right: -10px; width: 40px; }
-section.top .navbar-header .logo a { display: inline-block; background: url(../img/logo-Arauco-Coronel.svg) no-repeat; }
+section.top .navbar-header .logo a { display: inline-block; background: url(../img/logo_bom.png) no-repeat; background-size: contain;}
 
 section.main_content .box .box_slider .item a .caption.tiendas{background-color: rgba(0, 0, 0, 0.3);}
 section.main_content .box .box_slider .item a .caption.entretencion{background-color: rgba(0, 0, 0, 0.3);}
@@ -1925,3 +1925,4 @@ section.main_content .box .box_slider .item a .caption.galeria{background-color:
 }
 
 
+.cartelera img{max-width: 100%; height: auto}

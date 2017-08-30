@@ -9,10 +9,7 @@ Template name: Descuentos turistas
 <?php include('include-top.php') ?>
 <?php include('include-slider-home.php') ?>
 <?php include('include-search-home.php') ?>
-<?php
-$dias  = array("Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sábado");
-$meses = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
-?>
+
     <section class="main_content">
        <div class="titulo_seccion">
         <div class="container">
@@ -36,11 +33,11 @@ $meses = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "
 			<?php while (have_posts()) : the_post(); ?>                  
               <div class="row">
                 <div class="col-sm-12">
-                   <?php the_content(); ?>
+                  
                 </div>
               </div>            
               <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12 text-center">
                    <?php the_content(); ?>
                 </div>
               </div>
