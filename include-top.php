@@ -99,9 +99,9 @@ if(ICL_LANGUAGE_CODE=='en'){
                    <ul>
                      <li><a href="https://www.facebook.com/araucocoronel/" target="_blank"><i class="fa fa-facebook hvr-float" aria-hidden="true"></i></a></li>
 <!--
-                     <li><a href="https://www.instagram.com/parquearauco/" target="_blank"><i class="fa fa-instagram hvr-float" aria-hidden="true"></i></a></li>
-                     <li><a href="https://twitter.com/parquearauco" target="_blank"><i class="fa fa-twitter hvr-float" aria-hidden="true"></i></a></li>
--->
+                     <li><a href="https://www.instagram.com/parquearauco/" target="_blank"><i class="fa fa-instagram hvr-float" aria-hidden="true"></i></a></li>-->
+                     <li><a href="https://twitter.com/APremiumOutlet" target="_blank"><i class="fa fa-twitter hvr-float" aria-hidden="true"></i></a></li>
+
 					 <li><a href="<?php bloginfo('site_url'); ?>/horarios"><i class="fa fa-clock-o hvr-float" aria-hidden="true"></i></a></li>
                    </ul>
                 </div> 

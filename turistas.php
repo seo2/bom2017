@@ -69,7 +69,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 		                <div class="box">
 		                    <div class="box_slider">
 		                        <div class="item disable-owl-swipe">
-		                            <a href="<?php bloginfo('url'); ?>/servicio-al-cliente/servicios/">
+		                            <a href="<?php bloginfo('url'); ?>/turistas/descuentos//">
 		                                <div class="caption">
 		                                    <p>&nbsp </p>
 		                                    <h3><?php echo $tit4; ?> </h3>
