@@ -39,7 +39,7 @@ function theme_styles() {
 	wp_enqueue_style('style-jasny', 'https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css', array(), '1', 'screen' );
 	wp_enqueue_style('style-valio', get_template_directory_uri() . '/assets/css/formValidation.min.css', array(), '1', 'screen' );
 	wp_enqueue_style('style-dp', get_template_directory_uri() . '/assets/css/datepicker.min.css', array(), '1.2', 'screen' );
-	wp_enqueue_style('style-aco', get_template_directory_uri() . '/assets/css/custom.css', array(), '1.2.8', 'screen' );
+	wp_enqueue_style('style-aco', get_template_directory_uri() . '/assets/css/custom.css', array(), '1.2.9', 'screen' );
 
 }
 
