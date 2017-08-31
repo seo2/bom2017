@@ -97,16 +97,13 @@ if(ICL_LANGUAGE_CODE=='en'){
 					<?php if(ICL_LANGUAGE_CODE=='en'){ ?>
                     <h2>TIME SCHEDULES</h2>
                     <p>MONDAYS TO SUNDAYS FROM 10:30 AM. TO 9 PM.</p>
-<!--                     <p>SUNDAYS AND HOLIDAYS FROM 11 AM. TO 9 PM.</p> -->
 					<?php }elseif(ICL_LANGUAGE_CODE=='pt-br'){  ?>
                     <h2>HORÁRIOS</h2>
                     <p>SEGUNDA A DOMINGO DAS 10:30H ATÉ AS 21:00H.</p>
-<!--                     <p>DOMINGO E FERIADOS DAS 11:00H ATÉ AS 21:00H.</p> -->
 					<?php }else{  ?>
                     <h2>horarios</h2>
-                    <p>Lunes a domingo<br>
-	                    Apertura: 10:30hrs. Cierre 21:00 hrs.</p>
-<!--                     <p>domingo y festivos de 11:00 a 21:00 hrs. </p> -->
+                    <p>Lunes a domingo y festivos <br>
+	                   de 10:00 a 20:00 hrs.</p>
 					<?php } ?> 	                  
                   </div>
                 </li>

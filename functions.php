@@ -329,9 +329,10 @@ function quitatodo($string){
 	$colA = str_replace('&ouml;', 'o', $colA);
 	$colA = str_replace('ö', 'o', $colA);
 	$colA = str_replace('ñ', 'n', $colA);
+	$colA = str_replace('Í', 'i', $colA);
+	$colA = str_replace('Ü', 'u', $colA);
 	$colA = str_replace('%', 'porc', $colA);
 	$colA = str_replace('&', 'porc', $colA);
-	$colA = str_replace('generico', '', $colA);
 	$colA = str_replace("'", '', $colA);
 	$colA = strtolower($colA);
 	return $colA;
