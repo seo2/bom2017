@@ -95,33 +95,30 @@ if(ICL_LANGUAGE_CODE=='en'){
                           </div>
 
                         </div>
-                                                                                 <div class="datos_como_llegar clearfix">
-
-    <div class="col-xs-12 text-center">
-          				<br>
-                        <p><strong>Transporte Público</strong><br>
-                        <i>Public transport</i></p>
-                        <p><strong>Para poder llegar a Arauco Premium Outlet Buenaventura, debes realizar el siguiente recorrido:</strong><br>
-                        <i>To get to Arauco Premium Outlet Buenaventura, follow these instructions</i></p>
-                        <p><strong>Tomar el Metro de Santiago hasta la estación Vespucio Norte (Línea Amarilla).</strong><br>
-                        <i>Take the metro to Vespucio Norte station (Yellow Line).</i></p>
-                        <p><strong>Bajarse en la estación y caminar hasta la calle Av. Américo Vespucio Norte / El Rosal.</strong><br>
-                        <i>Get off at the station and walk to Av. Vespucio Norte / El Rosal.</i></p>
-                        <p><strong>Tomar bus Transantiago B05 (Sentido hacia sector Buenaventura).</strong><br>
-                        <i>Take the Transantiago bus B05 (Direction: Buenaventura).</i></p>
-                        <p><strong>Bajarse en la parada PB1013 San Ignacio Esq. / Galvarino.</strong><br>
-                        <i>Get off at stop PB1013, San Ignacio Esq. / Galvarino</i></p>
-                        <p><strong>Caminar hacia Arauco Premium Outlet Buenaventura (San Ignacio 500).</strong><br>
-                        <i>Walk to Arauco Premium Outlet Buenaventura (San Ignacio 500).</i></p>
-                        <br>
-                        <p><strong>Recomendaciones</strong><br>
-                        <i>Recommendations</i></p>
-                        <p><strong>En Chile el transporte público funciona a través de la tarjeta BIP, la cual puedes obtener en todas las estaciones de Metro de Santiago.</strong><br>
-                        <i>In Chile, public transport works with the BIP card, which can be bought at any metro station.</i></p>
-          
-    </div>
- 
-</div>
+						<div class="datos_como_llegar clearfix">
+						    <div class="col-xs-12">
+								<br>
+						        <p><strong>Transporte Público</strong><br>
+						        <i>Public transport</i></p>
+						        <p><strong>Para poder llegar a Arauco Premium Outlet Buenaventura, debes realizar el siguiente recorrido:</strong><br>
+						        <i>To get to Arauco Premium Outlet Buenaventura, follow these instructions</i></p>
+						        <p><strong>Tomar el Metro de Santiago hasta la estación Vespucio Norte (Línea Amarilla).</strong><br>
+						        <i>Take the metro to Vespucio Norte station (Yellow Line).</i></p>
+						        <p><strong>Bajarse en la estación y caminar hasta la calle Av. Américo Vespucio Norte / El Rosal.</strong><br>
+						        <i>Get off at the station and walk to Av. Vespucio Norte / El Rosal.</i></p>
+						        <p><strong>Tomar bus Transantiago B05 (Sentido hacia sector Buenaventura).</strong><br>
+						        <i>Take the Transantiago bus B05 (Direction: Buenaventura).</i></p>
+						        <p><strong>Bajarse en la parada PB1013 San Ignacio Esq. / Galvarino.</strong><br>
+						        <i>Get off at stop PB1013, San Ignacio Esq. / Galvarino</i></p>
+						        <p><strong>Caminar hacia Arauco Premium Outlet Buenaventura (San Ignacio 500).</strong><br>
+						        <i>Walk to Arauco Premium Outlet Buenaventura (San Ignacio 500).</i></p>
+						        <br>
+						        <p><strong>Recomendaciones</strong><br>
+						        <i>Recommendations</i></p>
+						        <p><strong>En Chile el transporte público funciona a través de la tarjeta BIP, la cual puedes obtener en todas las estaciones de Metro de Santiago.</strong><br>
+						        <i>In Chile, public transport works with the BIP card, which can be bought at any metro station.</i></p>
+						    </div>
+						</div>
                     </div> <!-- container -->
                 </div> <!-- content como llegar -->
 				</section>

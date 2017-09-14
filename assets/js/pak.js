@@ -264,6 +264,7 @@ $('.box_slider').owlCarousel({
 		   		nombre  	= $(this).data('nombre');
 		   		fono 		= $(this).data('fono');
 		   		piso 		= $(this).data('piso');
+		   		local 		= $(this).data('local');
 		   		url  		= $(this).data('url');
 		   		pindcto 	= $(this).data('pindcto');
 		   		pinctodesc  = $(this).data('pinctodesc');   	
@@ -284,7 +285,13 @@ $('.box_slider').owlCarousel({
 		   		$("#caja_datos_tienda .logo_tienda img").attr('src',logo);
 		   		$("#caja_datos_tienda .telefono").html(fono);
 		   		$("#caja_datos_tienda .piso").html(piso);
-		   		$("#caja_datos_tienda .url").html(result).attr('href',url);
+		   		$("#caja_datos_tienda .local").html(local);
+		   		//$("#caja_datos_tienda .url").html(result).attr('href',url);
+		   		if(url){
+		   			$("#caja_datos_tienda .url").show().attr('href','mailto:'+url);
+		   		}else{
+			   		$("#caja_datos_tienda .url").hide();
+		   		}
 		   		$('#mapaTienda img').attr('src',mapa);
 	            $(".overlay_img").css("background-color", "transparent");
 	            $(this).css("background-color", "rgba(228,4,33,0.5)");

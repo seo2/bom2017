@@ -129,6 +129,14 @@ if(ICL_LANGUAGE_CODE=='en'){
 										}else{
 											$clase = '';
 										}
+										$punto_interes = $t['punto_interes'];
+										$local = $db->rawQuery("select * from pak_tiendas_local where punto_interes = $punto_interes");
+										if($local){
+											foreach ($local as $l) {   
+												$local = $l['local'];
+											}
+										}
+			
 								?>
                                 <div class="col-sm-3 caja_tienda"> 
                                       <div class="item_tienda" id="tienda_<?php echo $t['punto_interes']; ?>">
@@ -137,7 +145,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                                               <h4 class="nombre_tienda"><?php echo $t['nombre']; ?></h4>
                                                <div class="borde"> </div>
                                               <span class="bg_nombre_tienda"> </span>
-                                                <span id="adidas" class="overlay_img<?php echo $clase; ?>" data-clander="<?php echo $imagen1; ?>" data-id="<?php echo $t['punto_interes']; ?>" data-logo="<?php echo $logo; ?>" data-desc='<?php echo trim($t["descripcion"]); ?>' data-img="<?php echo $imagen; ?>" data-fono="<?php echo $t['telefono_punto_interes']; ?>" data-piso="<?php echo $t['numero_piso']; ?>" data-url="<?php echo $t['url_punto_interes']; ?>" data-mapa="<?php bloginfo('template_url'); ?>/ws/uploads/plano_<?php echo $t['punto_interes']; ?>.jpg" data-nombre="<?php echo $t['nombre']; ?>" data-tipo="<?php echo $t['tipo']; ?>" data-pindcto="<?php echo $t['pinDescuento']; ?>" data-pinctodesc="<?php echo $t['piiDescripcionDescuento']; ?>"></span>
+                                                <span id="adidas" class="overlay_img<?php echo $clase; ?>" data-clander="<?php echo $imagen1; ?>" data-id="<?php echo $t['punto_interes']; ?>" data-logo="<?php echo $logo; ?>" data-desc='<?php echo trim($t["descripcion"]); ?>' data-img="<?php echo $imagen; ?>" data-fono="<?php echo $t['telefono_punto_interes']; ?>" data-piso="<?php echo $t['piso']; ?>" data-url="<?php echo $t['url_punto_interes']; ?>" data-mapa="<?php bloginfo('template_url'); ?>/ws/uploads/plano_<?php echo $t['punto_interes']; ?>.jpg" data-nombre="<?php echo $t['nombre']; ?>" data-tipo="<?php echo $t['tipo']; ?>" data-pindcto="<?php echo $t['pinDescuento']; ?>" data-pinctodesc="<?php echo $t['piiDescripcionDescuento']; ?>" data-local="<?php echo $local; ?>"></span>
                                                 <img class="img-responsive" src="<?php echo $imagen; ?>">
                                             </a>
 											<div class="box_logo_tienda">

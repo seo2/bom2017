@@ -3,7 +3,6 @@
 <?php include('include-slider-home.php') ?>
 <?php include('include-search-home.php') ?>  
 	<section class="main_content">
-
     	<div class="container">
 <?php wp_reset_query(); ?>	    	
 <?php	                                         

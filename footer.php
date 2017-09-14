@@ -84,7 +84,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                   </div>
                   <div class="bullet-content">
                     <h2><?php bloginfo('name'); ?></h2>              
-                    <p>San Ignacio 532<br>
+                    <p>San Ignacio 500 y 300<br>
                     Quilicura<br>
                     <a href="https://www.google.com/maps/place/Arauco+Premium+Outlet+Buenaventura/@-33.331047,-70.704999,18z/data=!4m5!3m4!1s0x0:0xf59c2753c10765ea!8m2!3d-33.3311628!4d-70.7053675?hl=es-ES" class="link_rojo" target="_blank"><?php echo $tit1; ?></a></p>
                   </div>

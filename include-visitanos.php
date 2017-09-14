@@ -89,6 +89,11 @@ if(ICL_LANGUAGE_CODE=='en'){
                 </a>
             </li>
             <li>
+                <a class="hvr-float" href="http://araucocoronel.cl/" target="_blank">
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/logos_mall/arauco_coronel.svg" class="logo_size">
+                </a>
+            </li>
+            <li>
                 <a class="hvr-float" href="http://araucopremiumoutlet.cl/" target="_blank">
                   <img src="<?php bloginfo('template_url'); ?>/assets/img/logos_mall/arauco_premium_outlet.svg" class="logo_size positive_top">
                 </a>

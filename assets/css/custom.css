@@ -1926,3 +1926,5 @@ section.main_content .box .box_slider .item a .caption.galeria{background-color:
 
 
 .cartelera img{max-width: 100%; height: auto}
+section.box_slider_home #caja_datos_tienda .datos_tienda .datos a.btn-url{border-radius: 0; background: #e40421; color: #fff; text-transform: uppercase; border: none; margin-bottom: 20px;}
+section.box_slider_home #caja_datos_tienda .datos_tienda .datos a.btn-url:hover{background: #000; color: #fff; }
