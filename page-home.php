@@ -8,11 +8,11 @@ Template name: Home
 <?php include('header.php') ?>
 <?php include('include-top.php') ?>
 <?php include('include-slider-home.php') ?>
-<?php include('include-search-home.php') ?>  
+<?php include('include-search-home.php') ?>
 	<section class="main_content">
     	<div class="container">
-<?php wp_reset_query(); ?>	
-<?php 
+<?php wp_reset_query(); ?>
+<?php
 // TRADUCCIONES
 if(ICL_LANGUAGE_CODE=='en'){
 	$tit1 = "Subscribe here";
@@ -20,20 +20,20 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$tit3 = "HIGHLIGHTS";
 	$btn1 = "View all our stores";
 	$btn2 = "View more";
-}elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
+}elseif(ICL_LANGUAGE_CODE=='pt-br'){
 	$tit1 = "Inscreva-se";
 	$tit2 = "Galeria";
 	$tit3 = "DESTACADOS";
 	$btn1 = "Veja todas as nossas lojas";
 	$btn2 = "Veja mais";
-}else{ 
+}else{
 	$tit1 = "Inscríbete";
 	$tit2 = "Galería";
 	$tit3 = "destacados";
 	$btn1 = "ver todas las tiendas";
 	$btn2 = "ver más";
-} ?>      	
-<?php	                                         
+} ?>
+<?php
     $args = array(
 		'post_type' => array('home')
     );
@@ -41,7 +41,7 @@ if(ICL_LANGUAGE_CODE=='en'){
     $i = 0;
     if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
     	$i++;
-?>	
+?>
         	<div class="row">
               <div class="col-sm-6 col-md-6">
                   <div class="box">
@@ -49,9 +49,9 @@ if(ICL_LANGUAGE_CODE=='en'){
 					   	<?php
 						   	$e = 0;
 							$sliders = get_order_group('distrito_de_lujo_imagen_slider');
-							foreach($sliders as $slider){  
-								$e++; 
-						?>    	                        
+							foreach($sliders as $slider){
+								$e++;
+						?>
                           <div class="item">
                               <a href="<?php bloginfo('url'); ?>/tiendas#tiendas">
 	                            <?php if($e==1){ ?>
@@ -65,10 +65,10 @@ if(ICL_LANGUAGE_CODE=='en'){
                               </a>
                           </div>
                         <?php } ?>
-                          
+
                       </div><!-- box slider  -->
                   </div> <!-- slider distrito -->
-              </div> 
+              </div>
 
               <div class="col-sm-6 col-md-6">
                   <div class="box">
@@ -76,9 +76,9 @@ if(ICL_LANGUAGE_CODE=='en'){
 					   	<?php
 						   	$e = 0;
 							$sliders = get_order_group('piso_de_diseno_imagen_slider');
-							foreach($sliders as $slider){  
-								$e++; 
-						?>    	
+							foreach($sliders as $slider){
+								$e++;
+						?>
                            <div class="item">
                                <a href="<?php bloginfo('url'); ?>/turistas">
 	                            <?php if($e==1){ ?>
@@ -88,7 +88,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                                        <div class="divider"> </div>
                                    </div>
                                 <?php } ?>
-                                <div class="box_slide" style="background: url(<?php echo get('piso_de_diseno_imagen_slider',$slider); ?>);"> </div>              
+                                <div class="box_slide" style="background: url(<?php echo get('piso_de_diseno_imagen_slider',$slider); ?>);"> </div>
                                </a>
                             </div> <!-- item -->
                         <?php } ?>
@@ -102,11 +102,11 @@ if(ICL_LANGUAGE_CODE=='en'){
 					   	<?php
 						   	$e = 0;
 							$sliders = get_order_group('travellers_imagen_slider');
-							foreach($sliders as $slider){  
-								$e++; 
-						?>    	
+							foreach($sliders as $slider){
+								$e++;
+						?>
                               <div class="item">
-                                  <a href="<?php bloginfo('url'); ?>/food-court-tiendas/#tiendas">                                   
+                                  <a href="<?php bloginfo('url'); ?>/food-court-tiendas/#tiendas">
 	                            <?php if($e==1){ ?>
                                    <div class="caption galeria">
                                       <p>NUESTRA VARIEDAD </p>
@@ -114,7 +114,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                                        <div class="divider"> </div>
                                    </div>
                                 <?php } ?>
-                                <div class="box_slide" style="background: url(<?php echo get('travellers_imagen_slider',$slider); ?>);"> </div>                       
+                                <div class="box_slide" style="background: url(<?php echo get('travellers_imagen_slider',$slider); ?>);"> </div>
                                   </a>
                                </div>
                         <?php } ?>
@@ -128,26 +128,26 @@ if(ICL_LANGUAGE_CODE=='en'){
 					   	<?php
 						   	$e = 0;
 							$sliders = get_order_group('boulevard_imagen_slider');
-							foreach($sliders as $slider){  
-								$e++; 
-						?>  
+							foreach($sliders as $slider){
+								$e++;
+						?>
                               <div class="item">
-                                  <a href="<?php bloginfo('url'); ?>/servicio-de-transfer">     
-	                            <?php if($e==1){ ?>
+                                <a href="<?php bloginfo('url'); ?>/servicio-de-transfer">
+	                               <?php if($e==1){ ?>
                                        <div class="caption entretencion">
                                           <p>¡TE LLEVAMOS! </p>
                                            <h3>TRANSFER</h3>
                                            <div class="divider"> </div>
                                        </div>
                                 <?php } ?>
-                                <div class="box_slide" style="background: url(<?php echo get('boulevard_imagen_slider',$slider); ?>);"> </div>                       
+                                <div class="box_slide" style="background: url(<?php echo get('boulevard_imagen_slider',$slider); ?>);"> </div>
                                   </a>
                                </div> <!-- item -->
                         <?php } ?>
                         </div><!-- box slider  -->
                  </div>
               </div> <!-- slider zona boulevard -->
-                
+
               <div class="col-sm-12">
                     <!-- NOVEDADES -->
                     <div class="box_horizontal">
@@ -155,13 +155,13 @@ if(ICL_LANGUAGE_CODE=='en'){
 					   	<?php
 						   	$e = 0;
 							$sliders = get_order_group('slider_medio_imagen_desktop');
-							foreach($sliders as $slider){  
-								$e++; 
-						?>    	
+							foreach($sliders as $slider){
+								$e++;
+						?>
                          <div class="item">
                             <div class="img_slide hidden-xs hidden-sm"  style="background: url(<?php echo get('slider_medio_imagen_desktop',$slider); ?>);"> </div>
                             <!-- 700 x 400px -->
-                            <div class="img_slide visible-xs visible-sm"  style="background: url(<?php echo get('slider_medio_imagen_mobile',$slider); ?>);"> </div> 
+                            <div class="img_slide visible-xs visible-sm"  style="background: url(<?php echo get('slider_medio_imagen_mobile',$slider); ?>);"> </div>
 				  			<div class="caption">
 					  			<?php if(get('slider_medio_texto_1',$slider)){ ?>
                                	<h3><?php echo get('slider_medio_texto_1',$slider); ?></h3>
@@ -183,7 +183,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                       </div>
                     </div><!-- box horizontal -->
               </div>
-                
+
             </div> <!-- row -->
 <?php endwhile; else: ?>
 <?php endif; ?>
