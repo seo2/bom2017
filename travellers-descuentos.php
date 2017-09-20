@@ -10,6 +10,7 @@ Template name: Travellers Descuentos
 <?php // include('include-slider-home.php') ?>
 <?php //include('include-search-home.php') ?>
 <?php include('include-search-no-slider.php') ?>
+
 <?php
 // TRADUCCIONES
 if(ICL_LANGUAGE_CODE=='en'){
@@ -90,6 +91,7 @@ function tiene_descuentos($idioma, $catID){
             </div>
           <div class="clear"></div>
           <div class="grid_descuentos center-block">
+
             <div class="container">
               <div class="row" id="caja_tienda">
 
@@ -120,7 +122,7 @@ function tiene_descuentos($idioma, $catID){
 
                                         $imagen   = '/ws/fotos/'. quitatodo($t['nombre']).'.png';
                                         $imagen1    = $imagen;
-                        $imagen   = get_template_directory_uri().$imagen;
+                                        $imagen   = get_template_directory_uri().$imagen;
 
 
                         if(is_url_exist($imagen)){
@@ -156,33 +158,33 @@ function tiene_descuentos($idioma, $catID){
                                       <div class="item_descuento" id="tienda_<?php echo $t['punto_interes']; ?>">
 
                                       <?php
-                      if($t['tipo']=='0'){
-                        $url = '/tiendas?tiendaID='.$t['punto_interes'];
-                      }elseif($t['tipo']=='110'){
-                        $url = '/boulevard-tiendas?tiendaID='.$t['punto_interes'];
-                      }elseif($t['tipo']=='119'){
-                        $url = '/distrito-de-lujo/distrito-de-lujo-tienda/?tiendaID='.$t['punto_interes'];
-                      }elseif($t['tipo']=='131'){
-                        $url = '/piso-diseno?tiendaID='.$t['punto_interes'];
-                      }
+                                      if($t['tipo']=='0'){
+                                        $url = '/tiendas?tiendaID='.$t['punto_interes'];
+                                      }elseif($t['tipo']=='110'){
+                                        $url = '/boulevard-tiendas?tiendaID='.$t['punto_interes'];
+                                      }elseif($t['tipo']=='119'){
+                                        $url = '/distrito-de-lujo/distrito-de-lujo-tienda/?tiendaID='.$t['punto_interes'];
+                                      }elseif($t['tipo']=='131'){
+                                        $url = '/piso-diseno?tiendaID='.$t['punto_interes'];
+                                      }
                                       ?>
+
                                         <a href="javascript:void(0);<?php //bloginfo('url'); ?><?php //echo $url; ?>" data-id="<?php echo $t['punto_interes']; ?>" data-logo="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" data-img="<?php echo $imagen; ?>" data-fono="<?php echo $t['telefono_punto_interes']; ?>" data-piso="<?php echo $t['numero_piso']; ?>" data-url="<?php echo $t['url_punto_interes']; ?>" data-mapa="<?php bloginfo('template_url'); ?>/ws/uploads/plano_<?php echo $t['punto_interes']; ?>.jpg" data-nombre="<?php echo $t['nombre']; ?>" data-tipo="<?php echo $t['tipo']; ?>">
+                                          <div class="box_nombre_tienda">
+                                            <h4 class="nombre_tienda"><?php echo $t['nombre']; ?></h4>
+                                          </div>
                                           <div class="box_dcto">
+
                                               <div class="datos_dcto">
-
-                                                      <div class="num bigtext"><span><?php echo  $t['pinDescuento']; ?><?php //echo str_replace('%', '', $t['pinDescuento']); ?></span></div>
-<!--
-                                                      <div class="box_percent">
-                                                           <div class="text_percent"> % </div>
-                                                           <div class="text_dcto">dcto </div>
-                                                       </div>
--->
-
+                                                      <div class="num bigtext">
+                                                        <span>
+                                                          <?php echo  $t['pinDescuento']; ?>
+                                                          <?php //echo str_replace('%', '', $t['pinDescuento']); ?>
+                                                          </span>
+                                                      </div>
                                                       <div class="clearfix"></div>
                                                   <p><?php echo $t['piiDescripcionDescuento']; ?></p>
                                                 </div>
-
-
                                             </div>
                                             <!-- 720 x 720 -->
                                             <img class="img-responsive" src="<?php echo $imagen; ?>">
