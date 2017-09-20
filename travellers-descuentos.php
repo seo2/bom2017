@@ -116,7 +116,6 @@ function tiene_descuentos($idioma, $catID){
             if($tiendas){
               foreach ($tiendas as $t) {
 
-
                                       $imagen = get_img_tienda($t['punto_interes']);
                                       if(!$imagen){
 
@@ -203,11 +202,8 @@ function tiene_descuentos($idioma, $catID){
               }
             }
             ?>
-
-
-
-                    </div>
-                  </div> <!-- container grila descuentos -->
+              </div>
+            </div> <!-- container grila descuentos -->
 
                 <div class="box_ver_mas_descuentos text-center">
                   <a href="javascript:void(0);" class="btn btn-default btn_ver_mas hvr-float">
