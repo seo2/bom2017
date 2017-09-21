@@ -7,8 +7,6 @@ Template name: Travellers Descuentos
 ?>
 <?php include('header.php') ?>
 <?php include('include-top.php') ?>
-<?php // include('include-slider-home.php') ?>
-<?php //include('include-search-home.php') ?>
 <?php include('include-search-no-slider.php') ?>
 
 <?php
@@ -28,7 +26,7 @@ if(ICL_LANGUAGE_CODE=='en'){
   $btn2 = "Veja mais lojas";
   $page = '/pt-br/viajantes/descontos';
 }else{
-  $tit1 = "TIENDAS DESCUENTOS PARA TRAVELLERS";
+  $tit1 = "DESCUENTOS TURISTAS";
   $tit2 = "filtrar por";
   $tit3 = "Todas las categorías";
   $btn1 = "ver más descuentos";
@@ -169,6 +167,7 @@ function tiene_descuentos($idioma, $catID){
                                       ?>
 
                                         <a href="javascript:void(0);<?php //bloginfo('url'); ?><?php //echo $url; ?>" data-id="<?php echo $t['punto_interes']; ?>" data-logo="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" data-img="<?php echo $imagen; ?>" data-fono="<?php echo $t['telefono_punto_interes']; ?>" data-piso="<?php echo $t['numero_piso']; ?>" data-url="<?php echo $t['url_punto_interes']; ?>" data-mapa="<?php bloginfo('template_url'); ?>/ws/uploads/plano_<?php echo $t['punto_interes']; ?>.jpg" data-nombre="<?php echo $t['nombre']; ?>" data-tipo="<?php echo $t['tipo']; ?>">
+                                          <div class="borde"></div>
                                           <div class="box_nombre_tienda">
                                             <h4 class="nombre_tienda"><?php echo $t['nombre']; ?></h4>
                                           </div>
@@ -230,7 +229,7 @@ function tiene_descuentos($idioma, $catID){
     }
     $cola = "&catID=$buscar";
   }else{
-    $tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and pinDescuento != '' AND pinDescuento != '0'");
+    $tiendas = $db->rawQuery("select * from pak_tiendas where pinDescuento != '' AND pinDescuento != '0'");
     if($tiendas){
       foreach ($tiendas as $t) {
         $rowcount++;
