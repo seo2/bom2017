@@ -1,7 +1,7 @@
 <?
 /*
 
-Template name: Descuentos turistas
+Template name: Destacado del mes
 
 */
 ?>
@@ -15,7 +15,7 @@ Template name: Descuentos turistas
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-10">
-                <h4 class="divider">Descuentos Turistas</h4>
+                <h4 class="divider">Destacado del mes</h4>
             </div>
             <div class="col-sm-12 col-md-2">
               <a href="<?php bloginfo('url'); ?>/turistas" class="back">< <?php echo $back; ?></a>
@@ -30,19 +30,19 @@ Template name: Descuentos turistas
         <div id="cartelera" class="anchor_seccion"></div>
             <div class="container">
 			<?php if (have_posts()) : ?>
-			<?php while (have_posts()) : the_post(); ?>                  
+			<?php while (have_posts()) : the_post(); ?>
               <div class="row">
                 <div class="col-sm-12">
-                  
+
                 </div>
-              </div>            
+              </div>
               <div class="row">
                 <div class="col-sm-12 text-center">
                    <?php the_content(); ?>
                 </div>
               </div>
 			<?php endwhile; ?>
-			<?php endif; ?>             
+			<?php endif; ?>
             </div><!-- container -->
       </section><!-- cartelera -->
     </div><!-- row -->
