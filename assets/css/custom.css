@@ -1994,5 +1994,6 @@ section.box_slider_home #caja_datos_tienda .datos_tienda .datos a.btn-url:hover{
     color: white;
 }
 */
-
-
+section.main_content section.travellers_servicios_generales .slider_servicios_generales .item .desc_servicio h3{
+  margin-bottom: 9px !important;
+}
