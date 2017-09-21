@@ -52,6 +52,12 @@ function tiene_descuentos($idioma, $catID){
           <div class="row">
             <div class="col-sm-12 col-md-10">
                <h4 class="divider"><?php echo $tit1; ?></h4>
+               <div class="bajada">
+                 <p>Descubre los descuentos exclusivos para turistas. <a href="<?php bloginfo('template_url') ?>/docs/descuentos_turistas.pdf" target="_blank">Descarga aquí </a>el folleto y presentar en las tiendas
+                 adheridas junto a tu pasaporte o DNI, para poder acceder a los descuentos.</p>
+                 <small>*Descuentos válidos solamente para extranjeros hasta el 31 de diciembre del 2017, presentando su pasaporte o DNI.</small>
+               </div>
+
             </div>
             <div class="col-sm-12 col-md-2">
                  <a href="javascript:window.history.back();" class="back">< <?php echo $back; ?></a>
@@ -202,7 +208,7 @@ function tiene_descuentos($idioma, $catID){
             }
             ?>
               </div>
-            </div> <!-- container grila descuentos -->
+            </div> <!-- container grilla descuentos -->
 
                 <div class="box_ver_mas_descuentos text-center">
                   <a href="javascript:void(0);" class="btn btn-default btn_ver_mas hvr-float">

@@ -1997,3 +1997,27 @@ section.box_slider_home #caja_datos_tienda .datos_tienda .datos a.btn-url:hover{
 section.main_content section.travellers_servicios_generales .slider_servicios_generales .item .desc_servicio h3{
   margin-bottom: 9px !important;
 }
+
+/*bajada descuentos turistas */
+
+.titulo_seccion .bajada p{
+    font-family: 'superclarendonlight_italic', Helvetica, Arial, sans-serif;
+    font-size:1em;
+    margin-top: 20px;
+}
+.titulo_seccion .bajada p a{
+    color: #FA1025;
+}
+.titulo_seccion .bajada p a:hover{
+    color: black;
+}
+
+
+.titulo_seccion .bajada small{
+font-family: 'superclarendonlight_italic', Helvetica, Arial, sans-serif;
+font-size: 0.9em;
+}
+
+
+
+
