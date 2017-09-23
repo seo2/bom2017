@@ -197,5 +197,8 @@
       </div> <!-- row -->
 <?php endwhile; else: ?>
 <?php endif; ?>
+
+
+
 <?php include('footer.php') ?>
 
