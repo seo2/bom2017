@@ -156,7 +156,8 @@ if(ICL_LANGUAGE_CODE=='en'){
 						   	$e = 0;
 							$sliders = get_order_group('slider_medio_imagen_desktop');
 							foreach($sliders as $slider){
-								$e++;
+								if(get('slider_medio_imagen_desktop',$slider)){
+									$e++;
 						?>
                          <div class="item">
                             <div class="img_slide hidden-xs hidden-sm"  style="background: url(<?php echo get('slider_medio_imagen_desktop',$slider); ?>);"> </div>
@@ -176,19 +177,30 @@ if(ICL_LANGUAGE_CODE=='en'){
 							   	<div class="text-center">
                                		<a href="<?php echo get('slider_medio_link',$slider); ?>" class="btn btn-default btn_blanco"  role="button"><?php echo $btn2; ?></a>
                                	</div>
-                               	<?php } ?>
+                               	<?php 
+										}
+	                                ?>
                             </div>
                          </div><!-- item -->
-                        <?php } ?>
+                        <?php 
+	                        		}
+	                        } ?>
                       </div>
                     </div><!-- box horizontal -->
-              </div>
-
+              
+                        <?php if($e==0){ ?>
+							<script>
+								$(document).ready(function() {
+									$('.box_horizontal').hide();
+								});
+							</script>
+                        <?php } ?>
+               </div>	
             </div> <!-- row -->
 <?php endwhile; else: ?>
 <?php endif; ?>
 
-  <div class="modal_overlay" data-url="<?php bloginfo('url'); ?>" data-template="<?php bloginfo('template_url'); ?>">
+  <div class="modal_overlay" data-url="<?php bloginfo('url'); ?>" data-template="<?php bloginfo('template_url'); ?>" style="display:none;">
         <div class="box_modal">
 			<a href="javascript:(0);" class="close_modal"></a>
             <div class="header_modal">
@@ -492,5 +504,6 @@ if(ICL_LANGUAGE_CODE=='en'){
           
         </div><!-- box_modal -->
   </div><!-- modal overlay --> 
+  
 <?php include('footer.php') ?>
 

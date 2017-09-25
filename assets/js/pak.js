@@ -762,6 +762,8 @@ var template = $('.modal_overlay').data('template');
 var cookie = Cookies.get('formulario');
 if(cookie==1){
 	$('.modal_overlay').hide();
+}else{
+	$('.modal_overlay').show();
 }
 
 
@@ -845,5 +847,5 @@ $("#formModal").submit(function(e) {
 
 $('.close_modal').on('click',function(){
 	$('.modal_overlay').hide();
-	
+	//Cookies.set('formulario', '1');
 });
